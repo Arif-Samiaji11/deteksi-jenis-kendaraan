@@ -1,0 +1,733 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "YOLO",
+        "importPath": "ultralytics",
+        "description": "ultralytics",
+        "isExtraImport": true,
+        "detail": "ultralytics",
+        "documentation": {}
+    },
+    {
+        "label": "YOLO",
+        "importPath": "ultralytics",
+        "description": "ultralytics",
+        "isExtraImport": true,
+        "detail": "ultralytics",
+        "documentation": {}
+    },
+    {
+        "label": "YOLO",
+        "importPath": "ultralytics",
+        "description": "ultralytics",
+        "isExtraImport": true,
+        "detail": "ultralytics",
+        "documentation": {}
+    },
+    {
+        "label": "object_counter",
+        "importPath": "ultralytics.solutions",
+        "description": "ultralytics.solutions",
+        "isExtraImport": true,
+        "detail": "ultralytics.solutions",
+        "documentation": {}
+    },
+    {
+        "label": "object_counter",
+        "importPath": "ultralytics.solutions",
+        "description": "ultralytics.solutions",
+        "isExtraImport": true,
+        "detail": "ultralytics.solutions",
+        "documentation": {}
+    },
+    {
+        "label": "object_counter",
+        "importPath": "ultralytics.solutions",
+        "description": "ultralytics.solutions",
+        "isExtraImport": true,
+        "detail": "ultralytics.solutions",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "is_vehicle_in",
+        "kind": 2,
+        "importPath": ".history.app_20240613005513",
+        "description": ".history.app_20240613005513",
+        "peekOfCode": "def is_vehicle_in(current_box, previous_box):\n    # Asumsi bahwa arah gerakan dari bawah ke atas dianggap sebagai IN\n    if previous_box and current_box[1] < previous_box[1]:\n        return True\n    return False\n# Fungsi untuk menyimpan hasil deteksi ke MongoDB\ndef save_to_mongodb(detections, collection):\n    if detections:\n        try:\n            collection.insert_many(detections)",
+        "detail": ".history.app_20240613005513",
+        "documentation": {}
+    },
+    {
+        "label": "save_to_mongodb",
+        "kind": 2,
+        "importPath": ".history.app_20240613005513",
+        "description": ".history.app_20240613005513",
+        "peekOfCode": "def save_to_mongodb(detections, collection):\n    if detections:\n        try:\n            collection.insert_many(detections)\n            print(f\"Inserted {len(detections)} records into MongoDB.\")\n        except Exception as e:\n            print(f\"Error saving to MongoDB: {e}\")\n# Fungsi untuk mengambil data dari MongoDB dan menyimpannya ke CSV\ndef export_to_csv(collection):\n    try:",
+        "detail": ".history.app_20240613005513",
+        "documentation": {}
+    },
+    {
+        "label": "export_to_csv",
+        "kind": 2,
+        "importPath": ".history.app_20240613005513",
+        "description": ".history.app_20240613005513",
+        "peekOfCode": "def export_to_csv(collection):\n    try:\n        data = list(collection.find())\n        if not data:\n            print(\"No data found in MongoDB collection.\")\n            return\n        df = pd.DataFrame(data)\n        required_columns = {'jenis_kendaraan', 'date', 'deteksi', 'hari'}\n        if not required_columns.issubset(df.columns):\n            print(",
+        "detail": ".history.app_20240613005513",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": ".history.app_20240613005513",
+        "description": ".history.app_20240613005513",
+        "peekOfCode": "client = MongoClient('mongodb://localhost:27017/')\ndb = client['db_data']\ncollection = db['hasil_deteksi']\n# Inisialisasi model YOLO\ntry:\n    model = YOLO('best.pt')\nexcept Exception as e:\n    print(f\"Error loading model: {e}\")\n    exit()\n# Path video yang akan digunakan (gunakan jalur absolut)",
+        "detail": ".history.app_20240613005513",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": ".history.app_20240613005513",
+        "description": ".history.app_20240613005513",
+        "peekOfCode": "db = client['db_data']\ncollection = db['hasil_deteksi']\n# Inisialisasi model YOLO\ntry:\n    model = YOLO('best.pt')\nexcept Exception as e:\n    print(f\"Error loading model: {e}\")\n    exit()\n# Path video yang akan digunakan (gunakan jalur absolut)\nvideo_path = os.path.abspath('video2 (1).mp4')",
+        "detail": ".history.app_20240613005513",
+        "documentation": {}
+    },
+    {
+        "label": "collection",
+        "kind": 5,
+        "importPath": ".history.app_20240613005513",
+        "description": ".history.app_20240613005513",
+        "peekOfCode": "collection = db['hasil_deteksi']\n# Inisialisasi model YOLO\ntry:\n    model = YOLO('best.pt')\nexcept Exception as e:\n    print(f\"Error loading model: {e}\")\n    exit()\n# Path video yang akan digunakan (gunakan jalur absolut)\nvideo_path = os.path.abspath('video2 (1).mp4')\n# Check if video file exists",
+        "detail": ".history.app_20240613005513",
+        "documentation": {}
+    },
+    {
+        "label": "video_path",
+        "kind": 5,
+        "importPath": ".history.app_20240613005513",
+        "description": ".history.app_20240613005513",
+        "peekOfCode": "video_path = os.path.abspath('video2 (1).mp4')\n# Check if video file exists\nif not os.path.exists(video_path):\n    print(f\"Video file '{video_path}' not found.\")\n    exit()\n# Buka file video\ncap = cv2.VideoCapture(video_path)\nassert cap.isOpened(), \"Error opening video file\"\n# Dapatkan informasi video\nw, h, fps = (int(cap.get(x)) for x in (cv2.CAP_PROP_FRAME_WIDTH,",
+        "detail": ".history.app_20240613005513",
+        "documentation": {}
+    },
+    {
+        "label": "cap",
+        "kind": 5,
+        "importPath": ".history.app_20240613005513",
+        "description": ".history.app_20240613005513",
+        "peekOfCode": "cap = cv2.VideoCapture(video_path)\nassert cap.isOpened(), \"Error opening video file\"\n# Dapatkan informasi video\nw, h, fps = (int(cap.get(x)) for x in (cv2.CAP_PROP_FRAME_WIDTH,\n             cv2.CAP_PROP_FRAME_HEIGHT, cv2.CAP_PROP_FPS))\nregion_of_interest = [(20, 600), (1700, 604), (1700, 560), (20, 560)]\n# Video writer\nvideo_writer = cv2.VideoWriter(\n    \"object_counting_output.avi\", cv2.VideoWriter_fourcc(*'mp4v'), fps, (w, h))\n# Init Object Counter",
+        "detail": ".history.app_20240613005513",
+        "documentation": {}
+    },
+    {
+        "label": "region_of_interest",
+        "kind": 5,
+        "importPath": ".history.app_20240613005513",
+        "description": ".history.app_20240613005513",
+        "peekOfCode": "region_of_interest = [(20, 600), (1700, 604), (1700, 560), (20, 560)]\n# Video writer\nvideo_writer = cv2.VideoWriter(\n    \"object_counting_output.avi\", cv2.VideoWriter_fourcc(*'mp4v'), fps, (w, h))\n# Init Object Counter\ncounter = object_counter.ObjectCounter()\ncounter.set_args(view_img=True, reg_pts=region_of_interest,\n                 classes_names=model.names, draw_tracks=True)\nframe_count = 0\nprevious_boxes = {}",
+        "detail": ".history.app_20240613005513",
+        "documentation": {}
+    },
+    {
+        "label": "video_writer",
+        "kind": 5,
+        "importPath": ".history.app_20240613005513",
+        "description": ".history.app_20240613005513",
+        "peekOfCode": "video_writer = cv2.VideoWriter(\n    \"object_counting_output.avi\", cv2.VideoWriter_fourcc(*'mp4v'), fps, (w, h))\n# Init Object Counter\ncounter = object_counter.ObjectCounter()\ncounter.set_args(view_img=True, reg_pts=region_of_interest,\n                 classes_names=model.names, draw_tracks=True)\nframe_count = 0\nprevious_boxes = {}\ndetections = []\n# Proses setiap frame",
+        "detail": ".history.app_20240613005513",
+        "documentation": {}
+    },
+    {
+        "label": "counter",
+        "kind": 5,
+        "importPath": ".history.app_20240613005513",
+        "description": ".history.app_20240613005513",
+        "peekOfCode": "counter = object_counter.ObjectCounter()\ncounter.set_args(view_img=True, reg_pts=region_of_interest,\n                 classes_names=model.names, draw_tracks=True)\nframe_count = 0\nprevious_boxes = {}\ndetections = []\n# Proses setiap frame\nwhile cap.isOpened():\n    success, im0 = cap.read()\n    if not success:",
+        "detail": ".history.app_20240613005513",
+        "documentation": {}
+    },
+    {
+        "label": "frame_count",
+        "kind": 5,
+        "importPath": ".history.app_20240613005513",
+        "description": ".history.app_20240613005513",
+        "peekOfCode": "frame_count = 0\nprevious_boxes = {}\ndetections = []\n# Proses setiap frame\nwhile cap.isOpened():\n    success, im0 = cap.read()\n    if not success:\n        print(\"Video frame is empty or video processing has been successfully completed.\")\n        break\n    tracks = model.track(im0, persist=True, show=False)",
+        "detail": ".history.app_20240613005513",
+        "documentation": {}
+    },
+    {
+        "label": "previous_boxes",
+        "kind": 5,
+        "importPath": ".history.app_20240613005513",
+        "description": ".history.app_20240613005513",
+        "peekOfCode": "previous_boxes = {}\ndetections = []\n# Proses setiap frame\nwhile cap.isOpened():\n    success, im0 = cap.read()\n    if not success:\n        print(\"Video frame is empty or video processing has been successfully completed.\")\n        break\n    tracks = model.track(im0, persist=True, show=False)\n    im0 = counter.start_counting(im0, tracks)",
+        "detail": ".history.app_20240613005513",
+        "documentation": {}
+    },
+    {
+        "label": "detections",
+        "kind": 5,
+        "importPath": ".history.app_20240613005513",
+        "description": ".history.app_20240613005513",
+        "peekOfCode": "detections = []\n# Proses setiap frame\nwhile cap.isOpened():\n    success, im0 = cap.read()\n    if not success:\n        print(\"Video frame is empty or video processing has been successfully completed.\")\n        break\n    tracks = model.track(im0, persist=True, show=False)\n    im0 = counter.start_counting(im0, tracks)\n    video_writer.write(im0)",
+        "detail": ".history.app_20240613005513",
+        "documentation": {}
+    },
+    {
+        "label": "is_vehicle_in",
+        "kind": 2,
+        "importPath": ".history.app_20240613234510",
+        "description": ".history.app_20240613234510",
+        "peekOfCode": "def is_vehicle_in(current_box, previous_box):\n    # Asumsi bahwa arah gerakan dari bawah ke atas dianggap sebagai IN\n    if previous_box and current_box[1] < previous_box[1]:\n        return True\n    return False\n# Fungsi untuk menyimpan hasil deteksi ke MongoDB\ndef save_to_mongodb(detections, collection):\n    if detections:\n        try:\n            collection.insert_many(detections)",
+        "detail": ".history.app_20240613234510",
+        "documentation": {}
+    },
+    {
+        "label": "save_to_mongodb",
+        "kind": 2,
+        "importPath": ".history.app_20240613234510",
+        "description": ".history.app_20240613234510",
+        "peekOfCode": "def save_to_mongodb(detections, collection):\n    if detections:\n        try:\n            collection.insert_many(detections)\n            print(f\"Inserted {len(detections)} records into MongoDB.\")\n        except Exception as e:\n            print(f\"Error saving to MongoDB: {e}\")\n# Fungsi untuk mengambil data dari MongoDB dan menyimpannya ke CSV\ndef export_to_csv(collection):\n    try:",
+        "detail": ".history.app_20240613234510",
+        "documentation": {}
+    },
+    {
+        "label": "export_to_csv",
+        "kind": 2,
+        "importPath": ".history.app_20240613234510",
+        "description": ".history.app_20240613234510",
+        "peekOfCode": "def export_to_csv(collection):\n    try:\n        data = list(collection.find())\n        if not data:\n            print(\"No data found in MongoDB collection.\")\n            return\n        df = pd.DataFrame(data)\n        required_columns = {'jenis_kendaraan', 'date', 'deteksi', 'hari'}\n        if not required_columns.issubset(df.columns):\n            print(",
+        "detail": ".history.app_20240613234510",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": ".history.app_20240613234510",
+        "description": ".history.app_20240613234510",
+        "peekOfCode": "client = MongoClient('mongodb://localhost:27017/')\ndb = client['db_datak']\ncollection = db['hasil_deteksi']\n# Inisialisasi model YOLO\ntry:\n    model = YOLO('best.pt')\nexcept Exception as e:\n    print(f\"Error loading model: {e}\")\n    exit()\n# Path video yang akan digunakan (gunakan jalur absolut)",
+        "detail": ".history.app_20240613234510",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": ".history.app_20240613234510",
+        "description": ".history.app_20240613234510",
+        "peekOfCode": "db = client['db_datak']\ncollection = db['hasil_deteksi']\n# Inisialisasi model YOLO\ntry:\n    model = YOLO('best.pt')\nexcept Exception as e:\n    print(f\"Error loading model: {e}\")\n    exit()\n# Path video yang akan digunakan (gunakan jalur absolut)\nvideo_path = os.path.abspath('video2 (1).mp4')",
+        "detail": ".history.app_20240613234510",
+        "documentation": {}
+    },
+    {
+        "label": "collection",
+        "kind": 5,
+        "importPath": ".history.app_20240613234510",
+        "description": ".history.app_20240613234510",
+        "peekOfCode": "collection = db['hasil_deteksi']\n# Inisialisasi model YOLO\ntry:\n    model = YOLO('best.pt')\nexcept Exception as e:\n    print(f\"Error loading model: {e}\")\n    exit()\n# Path video yang akan digunakan (gunakan jalur absolut)\nvideo_path = os.path.abspath('video2 (1).mp4')\n# Check if video file exists",
+        "detail": ".history.app_20240613234510",
+        "documentation": {}
+    },
+    {
+        "label": "video_path",
+        "kind": 5,
+        "importPath": ".history.app_20240613234510",
+        "description": ".history.app_20240613234510",
+        "peekOfCode": "video_path = os.path.abspath('video2 (1).mp4')\n# Check if video file exists\nif not os.path.exists(video_path):\n    print(f\"Video file '{video_path}' not found.\")\n    exit()\n# Buka file video\ncap = cv2.VideoCapture(video_path)\nassert cap.isOpened(), \"Error opening video file\"\n# Dapatkan informasi video\nw, h, fps = (int(cap.get(x)) for x in (cv2.CAP_PROP_FRAME_WIDTH,",
+        "detail": ".history.app_20240613234510",
+        "documentation": {}
+    },
+    {
+        "label": "cap",
+        "kind": 5,
+        "importPath": ".history.app_20240613234510",
+        "description": ".history.app_20240613234510",
+        "peekOfCode": "cap = cv2.VideoCapture(video_path)\nassert cap.isOpened(), \"Error opening video file\"\n# Dapatkan informasi video\nw, h, fps = (int(cap.get(x)) for x in (cv2.CAP_PROP_FRAME_WIDTH,\n             cv2.CAP_PROP_FRAME_HEIGHT, cv2.CAP_PROP_FPS))\nregion_of_interest = [(20, 600), (1700, 604), (1700, 560), (20, 560)]\n# Video writer\nvideo_writer = cv2.VideoWriter(\n    \"object_counting_output.avi\", cv2.VideoWriter_fourcc(*'mp4v'), fps, (w, h))\n# Init Object Counter",
+        "detail": ".history.app_20240613234510",
+        "documentation": {}
+    },
+    {
+        "label": "region_of_interest",
+        "kind": 5,
+        "importPath": ".history.app_20240613234510",
+        "description": ".history.app_20240613234510",
+        "peekOfCode": "region_of_interest = [(20, 600), (1700, 604), (1700, 560), (20, 560)]\n# Video writer\nvideo_writer = cv2.VideoWriter(\n    \"object_counting_output.avi\", cv2.VideoWriter_fourcc(*'mp4v'), fps, (w, h))\n# Init Object Counter\ncounter = object_counter.ObjectCounter()\ncounter.set_args(view_img=True, reg_pts=region_of_interest,\n                 classes_names=model.names, draw_tracks=True)\nframe_count = 0\nprevious_boxes = {}",
+        "detail": ".history.app_20240613234510",
+        "documentation": {}
+    },
+    {
+        "label": "video_writer",
+        "kind": 5,
+        "importPath": ".history.app_20240613234510",
+        "description": ".history.app_20240613234510",
+        "peekOfCode": "video_writer = cv2.VideoWriter(\n    \"object_counting_output.avi\", cv2.VideoWriter_fourcc(*'mp4v'), fps, (w, h))\n# Init Object Counter\ncounter = object_counter.ObjectCounter()\ncounter.set_args(view_img=True, reg_pts=region_of_interest,\n                 classes_names=model.names, draw_tracks=True)\nframe_count = 0\nprevious_boxes = {}\ndetections = []\n# Proses setiap frame",
+        "detail": ".history.app_20240613234510",
+        "documentation": {}
+    },
+    {
+        "label": "counter",
+        "kind": 5,
+        "importPath": ".history.app_20240613234510",
+        "description": ".history.app_20240613234510",
+        "peekOfCode": "counter = object_counter.ObjectCounter()\ncounter.set_args(view_img=True, reg_pts=region_of_interest,\n                 classes_names=model.names, draw_tracks=True)\nframe_count = 0\nprevious_boxes = {}\ndetections = []\n# Proses setiap frame\nwhile cap.isOpened():\n    success, im0 = cap.read()\n    if not success:",
+        "detail": ".history.app_20240613234510",
+        "documentation": {}
+    },
+    {
+        "label": "frame_count",
+        "kind": 5,
+        "importPath": ".history.app_20240613234510",
+        "description": ".history.app_20240613234510",
+        "peekOfCode": "frame_count = 0\nprevious_boxes = {}\ndetections = []\n# Proses setiap frame\nwhile cap.isOpened():\n    success, im0 = cap.read()\n    if not success:\n        print(\"Video frame is empty or video processing has been successfully completed.\")\n        break\n    tracks = model.track(im0, persist=True, show=False)",
+        "detail": ".history.app_20240613234510",
+        "documentation": {}
+    },
+    {
+        "label": "previous_boxes",
+        "kind": 5,
+        "importPath": ".history.app_20240613234510",
+        "description": ".history.app_20240613234510",
+        "peekOfCode": "previous_boxes = {}\ndetections = []\n# Proses setiap frame\nwhile cap.isOpened():\n    success, im0 = cap.read()\n    if not success:\n        print(\"Video frame is empty or video processing has been successfully completed.\")\n        break\n    tracks = model.track(im0, persist=True, show=False)\n    im0 = counter.start_counting(im0, tracks)",
+        "detail": ".history.app_20240613234510",
+        "documentation": {}
+    },
+    {
+        "label": "detections",
+        "kind": 5,
+        "importPath": ".history.app_20240613234510",
+        "description": ".history.app_20240613234510",
+        "peekOfCode": "detections = []\n# Proses setiap frame\nwhile cap.isOpened():\n    success, im0 = cap.read()\n    if not success:\n        print(\"Video frame is empty or video processing has been successfully completed.\")\n        break\n    tracks = model.track(im0, persist=True, show=False)\n    im0 = counter.start_counting(im0, tracks)\n    video_writer.write(im0)",
+        "detail": ".history.app_20240613234510",
+        "documentation": {}
+    },
+    {
+        "label": "set_page_layout",
+        "kind": 2,
+        "importPath": ".history.my_streamlit_20240613111742",
+        "description": ".history.my_streamlit_20240613111742",
+        "peekOfCode": "def set_page_layout():\n    st.markdown(\n        \"\"\"\n        <style>\n        .reportview-container {\n            background: linear-gradient(135deg, #f3ec78 0%, #af4261 100%);\n            color: #333333;\n        }\n        .sidebar .sidebar-content {\n            background: linear-gradient(135deg, #232526 0%, #414345 100%);",
+        "detail": ".history.my_streamlit_20240613111742",
+        "documentation": {}
+    },
+    {
+        "label": "draw_charts",
+        "kind": 2,
+        "importPath": ".history.my_streamlit_20240613111742",
+        "description": ".history.my_streamlit_20240613111742",
+        "peekOfCode": "def draw_charts(df):\n    car = df[df['jenis_kendaraan'] == 'car'].shape[0]\n    truck = df[df['jenis_kendaraan'] == 'truck'].shape[0]\n    total = car + truck\n    labels = ['Car', 'Truck']\n    sizes = [car, truck]\n    persentase_cars = car / total * 100 if total > 0 else 0\n    persentase_trucks = truck / total * 100 if total > 0 else 0\n    data = {\n        'Kategori': ['Car', 'Truck'],",
+        "detail": ".history.my_streamlit_20240613111742",
+        "documentation": {}
+    },
+    {
+        "label": "show_history",
+        "kind": 2,
+        "importPath": ".history.my_streamlit_20240613111742",
+        "description": ".history.my_streamlit_20240613111742",
+        "peekOfCode": "def show_history(history_df):\n    if history_df.empty:\n        st.write(\"Belum ada data history yang tersimpan.\")\n    else:\n        st.write(\"### History\")\n        for index, row in history_df.iterrows():\n            if st.button(f\"Hapus Baris {index}\"):\n                history_df.drop(index, inplace=True)\n                history_df.to_csv('history.csv', index=False)\n                st.success(f\"Baris {index} berhasil dihapus dari history.\")",
+        "detail": ".history.my_streamlit_20240613111742",
+        "documentation": {}
+    },
+    {
+        "label": "load_data_from_mongodb",
+        "kind": 2,
+        "importPath": ".history.my_streamlit_20240613111742",
+        "description": ".history.my_streamlit_20240613111742",
+        "peekOfCode": "def load_data_from_mongodb():\n    client = MongoClient(\"mongodb://localhost:27017/\")\n    db = client[\"db_data\"]\n    collection = db[\"hasil_deteksi\"]\n    data = list(collection.find())\n    for document in data:\n        document['_id'] = str(document['_id'])\n    df = pd.DataFrame(data)\n    return df\n# Set tata letak halaman dan warna latar belakang",
+        "detail": ".history.my_streamlit_20240613111742",
+        "documentation": {}
+    },
+    {
+        "label": "option",
+        "kind": 5,
+        "importPath": ".history.my_streamlit_20240613111742",
+        "description": ".history.my_streamlit_20240613111742",
+        "peekOfCode": "option = st.sidebar.selectbox(\n    'Silakan pilih:',\n    ('Home', 'Dataframe', 'History')\n)\nif option == 'Home' or option == '':\n    st.title(\"Selamat Datang di Halaman Utama\")\n    st.write(\"Di sini Anda dapat memilih untuk melihat data atau visualisasi.\")\nelif option == 'Dataframe':\n    st.title(\"Dataframe\")\n    try:",
+        "detail": ".history.my_streamlit_20240613111742",
+        "documentation": {}
+    },
+    {
+        "label": "set_page_layout",
+        "kind": 2,
+        "importPath": ".history.my_streamlit_20240613234503",
+        "description": ".history.my_streamlit_20240613234503",
+        "peekOfCode": "def set_page_layout():\n    st.markdown(\n        \"\"\"\n        <style>\n        .reportview-container {\n            background: linear-gradient(135deg, #f3ec78 0%, #af4261 100%);\n            color: #333333;\n        }\n        .sidebar .sidebar-content {\n            background: linear-gradient(135deg, #232526 0%, #414345 100%);",
+        "detail": ".history.my_streamlit_20240613234503",
+        "documentation": {}
+    },
+    {
+        "label": "draw_charts",
+        "kind": 2,
+        "importPath": ".history.my_streamlit_20240613234503",
+        "description": ".history.my_streamlit_20240613234503",
+        "peekOfCode": "def draw_charts(df):\n    car = df[df['jenis_kendaraan'] == 'car'].shape[0]\n    truck = df[df['jenis_kendaraan'] == 'truck'].shape[0]\n    total = car + truck\n    labels = ['Car', 'Truck']\n    sizes = [car, truck]\n    persentase_cars = car / total * 100 if total > 0 else 0\n    persentase_trucks = truck / total * 100 if total > 0 else 0\n    data = {\n        'Kategori': ['Car', 'Truck'],",
+        "detail": ".history.my_streamlit_20240613234503",
+        "documentation": {}
+    },
+    {
+        "label": "show_history",
+        "kind": 2,
+        "importPath": ".history.my_streamlit_20240613234503",
+        "description": ".history.my_streamlit_20240613234503",
+        "peekOfCode": "def show_history(history_df):\n    if history_df.empty:\n        st.write(\"Belum ada data history yang tersimpan.\")\n    else:\n        st.write(\"### History\")\n        for index, row in history_df.iterrows():\n            if st.button(f\"Hapus Baris {index}\"):\n                history_df.drop(index, inplace=True)\n                history_df.to_csv('history.csv', index=False)\n                st.success(f\"Baris {index} berhasil dihapus dari history.\")",
+        "detail": ".history.my_streamlit_20240613234503",
+        "documentation": {}
+    },
+    {
+        "label": "load_data_from_mongodb",
+        "kind": 2,
+        "importPath": ".history.my_streamlit_20240613234503",
+        "description": ".history.my_streamlit_20240613234503",
+        "peekOfCode": "def load_data_from_mongodb():\n    client = MongoClient(\"mongodb://localhost:27017/\")\n    db = client[\"db_datak\"]\n    collection = db[\"hasil_deteksi\"]\n    data = list(collection.find())\n    for document in data:\n        document['_id'] = str(document['_id'])\n    df = pd.DataFrame(data)\n    return df\n# Set tata letak halaman dan warna latar belakang",
+        "detail": ".history.my_streamlit_20240613234503",
+        "documentation": {}
+    },
+    {
+        "label": "option",
+        "kind": 5,
+        "importPath": ".history.my_streamlit_20240613234503",
+        "description": ".history.my_streamlit_20240613234503",
+        "peekOfCode": "option = st.sidebar.selectbox(\n    'Silakan pilih:',\n    ('Home', 'Dataframe', 'History')\n)\nif option == 'Home' or option == '':\n    st.title(\"Selamat Datang di Halaman Utama\")\n    st.write(\"Di sini Anda dapat memilih untuk melihat data atau visualisasi.\")\nelif option == 'Dataframe':\n    st.title(\"Dataframe\")\n    try:",
+        "detail": ".history.my_streamlit_20240613234503",
+        "documentation": {}
+    },
+    {
+        "label": "set_page_layout",
+        "kind": 2,
+        "importPath": ".history.strimlit_20240613233927",
+        "description": ".history.strimlit_20240613233927",
+        "peekOfCode": "def set_page_layout():\n    st.markdown(\n        \"\"\"\n        <style>\n        .reportview-container {\n            background: linear-gradient(135deg, #f3ec78 0%, #af4261 100%);\n            color: #333333;\n        }\n        .sidebar .sidebar-content {\n            background: linear-gradient(135deg, #232526 0%, #414345 100%);",
+        "detail": ".history.strimlit_20240613233927",
+        "documentation": {}
+    },
+    {
+        "label": "draw_charts",
+        "kind": 2,
+        "importPath": ".history.strimlit_20240613233927",
+        "description": ".history.strimlit_20240613233927",
+        "peekOfCode": "def draw_charts(df):\n    car = df[df['jenis_kendaraan'] == 'car'].shape[0]\n    truck = df[df['jenis_kendaraan'] == 'truck'].shape[0]\n    total = car + truck\n    labels = ['Car', 'Truck']\n    sizes = [car, truck]\n    persentase_cars = car / total * 100 if total > 0 else 0\n    persentase_trucks = truck / total * 100 if total > 0 else 0\n    data = {\n        'Kategori': ['Car', 'Truck'],",
+        "detail": ".history.strimlit_20240613233927",
+        "documentation": {}
+    },
+    {
+        "label": "show_history",
+        "kind": 2,
+        "importPath": ".history.strimlit_20240613233927",
+        "description": ".history.strimlit_20240613233927",
+        "peekOfCode": "def show_history(history_df):\n    if history_df.empty:\n        st.write(\"Belum ada data history yang tersimpan.\")\n    else:\n        st.write(\"### History\")\n        for index, row in history_df.iterrows():\n            if st.button(f\"Hapus Baris {index}\"):\n                history_df.drop(index, inplace=True)\n                history_df.to_csv('history.csv', index=False)\n                st.success(f\"Baris {index} berhasil dihapus dari history.\")",
+        "detail": ".history.strimlit_20240613233927",
+        "documentation": {}
+    },
+    {
+        "label": "load_data_from_mongodb",
+        "kind": 2,
+        "importPath": ".history.strimlit_20240613233927",
+        "description": ".history.strimlit_20240613233927",
+        "peekOfCode": "def load_data_from_mongodb():\n    client = MongoClient(\"mongodb://localhost:27017/\")\n    db = client[\"db_data\"]\n    collection = db[\"hasil_deteksi\"]\n    data = list(collection.find())\n    for document in data:\n        document['_id'] = str(document['_id'])\n    df = pd.DataFrame(data)\n    return df\n# Set tata letak halaman dan warna latar belakang",
+        "detail": ".history.strimlit_20240613233927",
+        "documentation": {}
+    },
+    {
+        "label": "option",
+        "kind": 5,
+        "importPath": ".history.strimlit_20240613233927",
+        "description": ".history.strimlit_20240613233927",
+        "peekOfCode": "option = st.sidebar.selectbox(\n    'Silakan pilih:',\n    ('Home', 'Dataframe', 'History')\n)\nif option == 'Home' or option == '':\n    st.title(\"Selamat Datang di Halaman Utama\")\n    st.write(\"Di sini Anda dapat memilih untuk melihat data atau visualisasi.\")\nelif option == 'Dataframe':\n    st.title(\"Dataframe\")\n    try:",
+        "detail": ".history.strimlit_20240613233927",
+        "documentation": {}
+    },
+    {
+        "label": "is_vehicle_in",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def is_vehicle_in(current_box, previous_box):\n    # Asumsi bahwa arah gerakan dari bawah ke atas dianggap sebagai IN\n    if previous_box and current_box[1] < previous_box[1]:\n        return True\n    return False\n# Fungsi untuk menyimpan hasil deteksi ke MongoDB\ndef save_to_mongodb(detections, collection):\n    if detections:\n        try:\n            collection.insert_many(detections)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "save_to_mongodb",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def save_to_mongodb(detections, collection):\n    if detections:\n        try:\n            collection.insert_many(detections)\n            print(f\"Inserted {len(detections)} records into MongoDB.\")\n        except Exception as e:\n            print(f\"Error saving to MongoDB: {e}\")\n# Fungsi untuk mengambil data dari MongoDB dan menyimpannya ke CSV\ndef export_to_csv(collection):\n    try:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "export_to_csv",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def export_to_csv(collection):\n    try:\n        data = list(collection.find())\n        if not data:\n            print(\"No data found in MongoDB collection.\")\n            return\n        df = pd.DataFrame(data)\n        required_columns = {'jenis_kendaraan', 'date', 'deteksi', 'hari'}\n        if not required_columns.issubset(df.columns):\n            print(",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "client = MongoClient('mongodb://localhost:27017/')\ndb = client['db_datak']\ncollection = db['hasil_deteksi']\n# Inisialisasi model YOLO\ntry:\n    model = YOLO('best.pt')\nexcept Exception as e:\n    print(f\"Error loading model: {e}\")\n    exit()\n# Path video yang akan digunakan (gunakan jalur absolut)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "db = client['db_datak']\ncollection = db['hasil_deteksi']\n# Inisialisasi model YOLO\ntry:\n    model = YOLO('best.pt')\nexcept Exception as e:\n    print(f\"Error loading model: {e}\")\n    exit()\n# Path video yang akan digunakan (gunakan jalur absolut)\nvideo_path = os.path.abspath('video2 (1).mp4')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "collection",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "collection = db['hasil_deteksi']\n# Inisialisasi model YOLO\ntry:\n    model = YOLO('best.pt')\nexcept Exception as e:\n    print(f\"Error loading model: {e}\")\n    exit()\n# Path video yang akan digunakan (gunakan jalur absolut)\nvideo_path = os.path.abspath('video2 (1).mp4')\n# Check if video file exists",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "video_path",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "video_path = os.path.abspath('video2 (1).mp4')\n# Check if video file exists\nif not os.path.exists(video_path):\n    print(f\"Video file '{video_path}' not found.\")\n    exit()\n# Buka file video\ncap = cv2.VideoCapture(video_path)\nassert cap.isOpened(), \"Error opening video file\"\n# Dapatkan informasi video\nw, h, fps = (int(cap.get(x)) for x in (cv2.CAP_PROP_FRAME_WIDTH,",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "cap",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "cap = cv2.VideoCapture(video_path)\nassert cap.isOpened(), \"Error opening video file\"\n# Dapatkan informasi video\nw, h, fps = (int(cap.get(x)) for x in (cv2.CAP_PROP_FRAME_WIDTH,\n             cv2.CAP_PROP_FRAME_HEIGHT, cv2.CAP_PROP_FPS))\nregion_of_interest = [(20, 600), (1700, 604), (1700, 560), (20, 560)]\n# Video writer\nvideo_writer = cv2.VideoWriter(\n    \"object_counting_output.avi\", cv2.VideoWriter_fourcc(*'mp4v'), fps, (w, h))\n# Init Object Counter",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "region_of_interest",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "region_of_interest = [(20, 600), (1700, 604), (1700, 560), (20, 560)]\n# Video writer\nvideo_writer = cv2.VideoWriter(\n    \"object_counting_output.avi\", cv2.VideoWriter_fourcc(*'mp4v'), fps, (w, h))\n# Init Object Counter\ncounter = object_counter.ObjectCounter()\ncounter.set_args(view_img=True, reg_pts=region_of_interest,\n                 classes_names=model.names, draw_tracks=True)\nframe_count = 0\nprevious_boxes = {}",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "video_writer",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "video_writer = cv2.VideoWriter(\n    \"object_counting_output.avi\", cv2.VideoWriter_fourcc(*'mp4v'), fps, (w, h))\n# Init Object Counter\ncounter = object_counter.ObjectCounter()\ncounter.set_args(view_img=True, reg_pts=region_of_interest,\n                 classes_names=model.names, draw_tracks=True)\nframe_count = 0\nprevious_boxes = {}\ndetections = []\n# Proses setiap frame",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "counter",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "counter = object_counter.ObjectCounter()\ncounter.set_args(view_img=True, reg_pts=region_of_interest,\n                 classes_names=model.names, draw_tracks=True)\nframe_count = 0\nprevious_boxes = {}\ndetections = []\n# Proses setiap frame\nwhile cap.isOpened():\n    success, im0 = cap.read()\n    if not success:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "frame_count",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "frame_count = 0\nprevious_boxes = {}\ndetections = []\n# Proses setiap frame\nwhile cap.isOpened():\n    success, im0 = cap.read()\n    if not success:\n        print(\"Video frame is empty or video processing has been successfully completed.\")\n        break\n    tracks = model.track(im0, persist=True, show=False)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "previous_boxes",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "previous_boxes = {}\ndetections = []\n# Proses setiap frame\nwhile cap.isOpened():\n    success, im0 = cap.read()\n    if not success:\n        print(\"Video frame is empty or video processing has been successfully completed.\")\n        break\n    tracks = model.track(im0, persist=True, show=False)\n    im0 = counter.start_counting(im0, tracks)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "detections",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "detections = []\n# Proses setiap frame\nwhile cap.isOpened():\n    success, im0 = cap.read()\n    if not success:\n        print(\"Video frame is empty or video processing has been successfully completed.\")\n        break\n    tracks = model.track(im0, persist=True, show=False)\n    im0 = counter.start_counting(im0, tracks)\n    video_writer.write(im0)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "set_page_layout",
+        "kind": 2,
+        "importPath": "my_streamlit",
+        "description": "my_streamlit",
+        "peekOfCode": "def set_page_layout():\n    st.markdown(\n        \"\"\"\n        <style>\n        .reportview-container {\n            background: linear-gradient(135deg, #f3ec78 0%, #af4261 100%);\n            color: #333333;\n        }\n        .sidebar .sidebar-content {\n            background: linear-gradient(135deg, #232526 0%, #414345 100%);",
+        "detail": "my_streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "draw_charts",
+        "kind": 2,
+        "importPath": "my_streamlit",
+        "description": "my_streamlit",
+        "peekOfCode": "def draw_charts(df):\n    car = df[df['jenis_kendaraan'] == 'car'].shape[0]\n    truck = df[df['jenis_kendaraan'] == 'truck'].shape[0]\n    total = car + truck\n    labels = ['Car', 'Truck']\n    sizes = [car, truck]\n    persentase_cars = car / total * 100 if total > 0 else 0\n    persentase_trucks = truck / total * 100 if total > 0 else 0\n    data = {\n        'Kategori': ['Car', 'Truck'],",
+        "detail": "my_streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "show_history",
+        "kind": 2,
+        "importPath": "my_streamlit",
+        "description": "my_streamlit",
+        "peekOfCode": "def show_history(history_df):\n    if history_df.empty:\n        st.write(\"Belum ada data history yang tersimpan.\")\n    else:\n        st.write(\"### History\")\n        for index, row in history_df.iterrows():\n            if st.button(f\"Hapus Baris {index}\"):\n                history_df.drop(index, inplace=True)\n                history_df.to_csv('history.csv', index=False)\n                st.success(f\"Baris {index} berhasil dihapus dari history.\")",
+        "detail": "my_streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "load_data_from_mongodb",
+        "kind": 2,
+        "importPath": "my_streamlit",
+        "description": "my_streamlit",
+        "peekOfCode": "def load_data_from_mongodb():\n    client = MongoClient(\"mongodb://localhost:27017/\")\n    db = client[\"db_datak\"]\n    collection = db[\"hasil_deteksi\"]\n    data = list(collection.find())\n    for document in data:\n        document['_id'] = str(document['_id'])\n    df = pd.DataFrame(data)\n    return df\n# Set tata letak halaman dan warna latar belakang",
+        "detail": "my_streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "option",
+        "kind": 5,
+        "importPath": "my_streamlit",
+        "description": "my_streamlit",
+        "peekOfCode": "option = st.sidebar.selectbox(\n    'Silakan pilih:',\n    ('Home', 'Dataframe', 'History')\n)\nif option == 'Home' or option == '':\n    st.title(\"Selamat Datang di Halaman Utama\")\n    st.write(\"Di sini Anda dapat memilih untuk melihat data atau visualisasi.\")\nelif option == 'Dataframe':\n    st.title(\"Dataframe\")\n    try:",
+        "detail": "my_streamlit",
+        "documentation": {}
+    }
+]
