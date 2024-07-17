@@ -40,18 +40,18 @@ def set_page_layout():
 
 
 def draw_charts(df):
-    car = df[df['jenis_kendaraan'] == 'car'].shape[0]
-    truck = df[df['jenis_kendaraan'] == 'truck'].shape[0]
-    total = car + truck
+    car_count = df[df['jenis_kendaraan'] == 'car']['deteksi'].sum()
+    truck_count = df[df['jenis_kendaraan'] == 'truck']['deteksi'].sum()
+    total = car_count + truck_count
 
     labels = ['Car', 'Truck']
-    sizes = [car, truck]
-    persentase_cars = car / total * 100 if total > 0 else 0
-    persentase_trucks = truck / total * 100 if total > 0 else 0
+    sizes = [car_count, truck_count]
+    persentase_cars = car_count / total * 100 if total > 0 else 0
+    persentase_trucks = truck_count / total * 100 if total > 0 else 0
 
     data = {
         'Kategori': ['Car', 'Truck'],
-        'Jumlah': [car, truck],
+        'Jumlah': [car_count, truck_count],
         'Persentase': [f'{persentase_cars:.2f}%', f'{persentase_trucks:.2f}%']
     }
 
@@ -84,7 +84,7 @@ def draw_charts(df):
     st.sidebar.pyplot(fig)
 
     fig, ax = plt.subplots()
-    ax.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+    ax.pie(sizes, explode=explode, labels=labels, autopct='%1.1%%',
            startangle=90, wedgeprops=dict(width=0.3), colors=['#ff9999', '#66b3ff'])
     ax.axis('equal')
     st.sidebar.pyplot(fig)
@@ -114,7 +114,7 @@ def show_history(history_df):
 
 def load_data_from_mongodb():
     client = MongoClient("mongodb://localhost:27017/")
-    db = client["db_datak"]
+    db = client["db_data_jenis_kendaraan"]
     collection = db["hasil_deteksi"]
     data = list(collection.find())
     for document in data:

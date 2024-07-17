@@ -1,0 +1,6 @@
+altair
+ultralytics
+opencv-python
+pandas
+pymongo
+streamlit
